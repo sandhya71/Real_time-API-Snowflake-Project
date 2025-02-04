@@ -28,7 +28,7 @@ def snowpark_basic_auth() -> Session:
     connection_parameters = {
        "ACCOUNT":"ZD73737",
        "region":"Asia Pacific (Singapore)",
-        "USER":"Deny7",
+        "USER":"DENY7",
         "PASSWORD":"nmFbAYBz2UK9w8D",
         "ROLE":"SYSADMIN",
         "DATABASE":"dev_db",
