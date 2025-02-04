@@ -33,7 +33,7 @@ if (state_option is not None and len(state_option) > 1):
     city_query = f"""
     select city from DEV_DB.CONSUMPTION_SCH.AGG_CITY_FACT_HOUR_LEVEL 
     where 
-    state = '{state_option}' group by city
+    state = 'Karnataka' group by city
     order by 1 desc
     """
     # execute query using sql api and execute it by calling collect function.
@@ -48,8 +48,8 @@ if (city_option is not None and len(city_option) > 1):
         from 
         DEV_DB.CONSUMPTION_SCH.AGG_CITY_FACT_HOUR_LEVEL 
         where 
-            state = '{state_option}' and
-            city = '{city_option}'
+            state = 'Karnataka' and
+            city = 'Bengaluru'
         group by 
         measurement_date
         order by 1 desc
@@ -71,9 +71,9 @@ if (date_option is not None):
     from 
         dev_db.consumption_sch.agg_city_fact_hour_level
     where 
-        state = '{state_option}' and
-        city = '{city_option}' and 
-        date(measurement_time) = '{date_option}'
+        state = 'Karnataka' and
+        city = 'Bengaluru' and 
+        date(measurement_time) = '2024-03-01 01:00:00.000'
     order by measurement_time
     """
     sf_df = session.sql(trend_sql).collect()
