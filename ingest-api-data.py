@@ -26,10 +26,10 @@ today_string = current_time_ist.strftime('%Y_%m_%d')
 # Following credential has to come using secret whie running in automated way
 def snowpark_basic_auth() -> Session:
     connection_parameters = {
-       "ACCOUNT":"<your-account>",
-       "region":"<your-region>",
-        "USER":"<your-user>",
-        "PASSWORD":"<your-password>",
+       "ACCOUNT":"ZD73737",
+       "region":"Asia Pacific (Singapore)",
+        "USER":"Deny7",
+        "PASSWORD":"nmFbAYBz2UK9w8D",
         "ROLE":"SYSADMIN",
         "DATABASE":"dev_db",
         "SCHEMA":"stage_sch",
@@ -107,7 +107,7 @@ def get_air_quality_data(api_key, limit):
     return None
 
 # Replace 'YOUR_API_KEY' with your actual API key
-api_key = '<add-app-api-key>'
+api_key = '579b464db66ec23bdd0000010f224c5eeb5248575974dac2ee7714c0'
 
 
 limit_value = 4000
