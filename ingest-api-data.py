@@ -23,7 +23,7 @@ today_string = current_time_ist.strftime('%Y_%m_%d')
 # Snowflake connection setup
 def snowpark_basic_auth() -> Session:
     connection_parameters = {
-        "ACCOUNT": "ZD73737.ap-southeast-1",  # Include region in account name
+        "ACCOUNT": "olzxsyy-zd73737", 
         "USER": "DENY7",
         "PASSWORD": "Snowflake@1",
         "ROLE": "SYSADMIN",
