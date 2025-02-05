@@ -23,13 +23,13 @@ today_string = current_time_ist.strftime('%Y_%m_%d')
 # Snowflake connection setup
 def snowpark_basic_auth() -> Session:
     connection_parameters = {
-        "ACCOUNT": "olzxsyy-zd73737", 
-        "USER": "DENY7",
-        "PASSWORD": "Snowflake@1",
-        "ROLE": "SYSADMIN",
+        "ACCOUNT": "", 
+        "USER": "",
+        "PASSWORD":"",
+        "ROLE": "",
         "DATABASE": "dev_db",
         "SCHEMA": "stage_sch",
-        "WAREHOUSE": "load_wh"
+        "WAREHOUSE": ""
     }
     return Session.builder.configs(connection_parameters).create()
 
@@ -72,6 +72,6 @@ def get_air_quality_data(api_key, limit):
         sys.exit(1)
 
 # Execute the script
-api_key = '579b464db66ec23bdd0000010f224c5eeb5248575974dac2ee7714c0'
+api_key = ''
 limit_value = 4000
 air_quality_data = get_air_quality_data(api_key, limit_value)
